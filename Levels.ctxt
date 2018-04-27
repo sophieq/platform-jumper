@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Levels()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Levels.\n\ \n
+comment1.params=
+comment1.target=void\ addMoney()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ addMoreMoney()
+comment4.params=
+comment4.target=void\ addMoreTrees()
+numComments=5
