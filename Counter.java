@@ -1,36 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 
-/**
- * A Counter class that allows you to display a numerical value on screen.
- * 
- * The Counter is an actor, so you will need to create it, and then add it to
- * the world in Greenfoot.  If you keep a reference to the Counter then you
- * can adjust its value.  Here's an example of a world class that
- * displays a counter with the number of act cycles that have occurred:
- * 
- * <pre>
- * class CountingWorld
- * {
- *     private Counter actCounter;
- *     
- *     public CountingWorld()
- *     {
- *         super(600, 400, 1);
- *         actCounter = new Counter("Act Cycles: ");
- *         addObject(actCounter, 100, 100);
- *     }
- *     
- *     public void act()
- *     {
- *         actCounter.setValue(actCounter.getValue() + 1);
- *     }
- * }
- * </pre>
- * 
- * @author Neil Brown and Michael Kölling 
- * @version 1.0
- */
 public class Counter extends Actor
 {
     private static final Color transparent = new Color(0,0,0,0);
@@ -72,8 +42,7 @@ public class Counter extends Actor
     }
 
     /**
-     * Add a new score to the current counter value.  This will animate
-     * the counter over consecutive frames until it reaches the new value.
+     updates the score
      */
     public void add(int score)
     {
@@ -89,7 +58,7 @@ public class Counter extends Actor
     }
 
     /**
-     * Set a new counter value.  This will not animate the counter.
+     * Set a new counter value.
      */
     public void setValue(int newValue)
     {
@@ -99,7 +68,7 @@ public class Counter extends Actor
     }
     
     /**
-     * Sets a text prefix that should be displayed before
+     * Set a text prefix that should be displayed before
      * the counter value (e.g. "Score: ").
      */
     public void setPrefix(String prefix)
@@ -109,7 +78,7 @@ public class Counter extends Actor
     }
 
     /**
-     * Update the image on screen to show the current value.
+     * Updates the image on screen to show the current value.
      */
     private void updateImage()
     {
